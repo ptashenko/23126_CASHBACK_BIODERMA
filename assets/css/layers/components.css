@@ -1,0 +1,52 @@
+@layer components {
+  .mso {
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .c-navLink {
+    @apply flex justify-start w-fit text-left uppercase font-bold p-2 items-center text-white transition-colors;
+    @apply font-bold cursor-pointer leading-none no-underline;
+
+    font-size: clamp(0.9rem, 1.1vw, 1.4rem);
+    margin-left: theme("spacing.2");
+    margin-right: auto;
+    @apply xl:m-0;
+
+    /* '.c-nav__link': {
+          // Style the children for subMenu's
+          '&:not(.children)': {
+            height: theme('spacing.10'),
+          },
+          '@screen xl': {
+            margin: '0',
+            '&:not(.children)': {
+              height: theme('height.header'),
+              paddingTop: theme('spacing.0'),
+              paddingBottom: theme('spacing.0'),
+              paddingLeft: theme('spacing.3'),
+              paddingRight: theme('spacing.3'),
+            },
+          },
+        }, */
+  }
+  @media (hover: hover) {
+    .c-nav__link:hover:not(.-hasIcon),
+    .c-nav__link:hover > .c-nav__linkLabel {
+      @apply opacity-75 underline;
+    }
+  }
+
+  .c-navLink:hover{
+    @apply opacity-75 underline text-white;
+  }
+
+  .nuxt-icon svg {
+    height: auto !important;
+    margin-bottom: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

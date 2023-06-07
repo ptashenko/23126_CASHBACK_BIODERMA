@@ -1,0 +1,78 @@
+{
+  "name": "23126_CASHBACK_BIODERMA",
+  "version": "1.0.1",
+  "config": {
+    "project": "23126"
+  },
+  "private": true,
+  "author": "Novatag Team <develop@novatag.it> (https://github.com/NovatagSource)",
+  "description": "CASHBACK BIODERMA 23126",
+  "scripts": {
+    "dev": "nuxi dev",
+    "dev:staging": "DEPLOY_ENV=staging nuxi dev",
+    "dev:prod": "DEPLOY_ENV=production nuxi dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "cleanup": "nuxt cleanup",
+    "build:staging": "DEPLOY_ENV=staging nuxt build",
+    "build:prod": "DEPLOY_ENV=production nuxt build",
+    "build:static:staging": "DEPLOY_ENV=staging nuxi generate",
+    "build:static:prod": "DEPLOY_ENV=production nuxi generate",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "lint:fix": "npm run lint:js -- --fix",
+    "prepare": "husky install",
+    "predev": "node ./config-application/create-config.js t23126 && nuxt prepare && npm run lint:fix",
+    "predev:staging": "node ./config-application/create-config.js t23126 && nuxt prepare && npm run lint:fix",
+    "predev:prod": "node ./config-application/create-config.js c23126 && nuxt prepare && npm run lint:fix",
+    "prebuild:staging": "node ./config-application/create-config.js t23126 && nuxt prepare && npm run lint:fix",
+    "prebuild:static:staging": "node ./config-application/create-config.js t23126 && nuxt prepare  && npm run lint:fix",
+    "prebuild:prod": "node ./config-application/create-config.js c23126 && nuxt prepare  && npm run lint:fix",
+    "prebuild:static:prod": "node ./config-application/create-config.js c23126 && nuxt prepare  && npm run lint:fix",
+    "gh:secrets": "gh secret set --repo NovatagSource/$npm_package_name --app actions --env-file gitHub.env"
+  },
+  "overrides": {
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@pinia/nuxt": "^0.4.7",
+    "@types/crypto-js": "^4.1.1",
+    "@vee-validate/i18n": "^4.7.3",
+    "@vee-validate/rules": "^4.7.3",
+    "@vueuse/components": "^9.13.0",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.7",
+    "eslint": "^8.32.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lottie-web-vue": "^2.0.6",
+    "nuxt": "3.4.1",
+    "nuxt-icons": "^3.1.0",
+    "nuxt-windicss": "^2.6.0",
+    "pdfjs-dist": "^3.2.146",
+    "sweetalert2": "^11.4.8",
+    "v-viewer": "^3.0.11",
+    "vee-validate": "^4.7.3",
+    "vue-currency-input": "^3.0.4",
+    "vue3-datepicker": "^0.3.4",
+    "vue3-form-wizard": "^0.2.0"
+  },
+  "contributors": [
+    "Vasyl Aronovych <vasyl.aronovych@novatag.it> (https://novatag.it/)",
+    "Mattia Fossati <Mattia.Fossati@novatag.it> (https://novatag.it/)",
+    "Federico Delpero <federico.delpero@novatag.it> (https://novatag.it/)",
+    "Ryan Serrano <ryan.serrano@novatag.it> (https://menosesmas.it/ryan)"
+  ],
+  "dependencies": {
+    "@vue-final-modal/nuxt": "^1.0.0",
+    "vue-final-modal": "^4.4.2"
+  }
+}

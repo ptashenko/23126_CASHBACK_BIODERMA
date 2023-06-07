@@ -1,0 +1,26 @@
+.fade-enter-active, .fade-leave-active { transition: opacity 300ms ease-in-out; }
+.fade-leave-to { opacity: 0; }
+
+.slideDown-enter-active,
+.slideDown-leave-active { transition: transform 400ms ease-in-out; }
+
+.slideDown-enter-from,
+.slideDown-leave-to { transform: translateY(-100%); }
+
+.slideFade-enter-active,
+.slideFade-leave-active { transition: opacity 400ms ease-in-out, transform 400ms ease-in-out; }
+
+.slideFade-enter-from,
+.slideFade-leave-to { opacity: 0; transform: translateX(-30px); }
+
+.slideFromRight-enter-active,
+.slideFromRight-leave-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.slideFromRight-enter-from,
+.slideFromRight-leave-to {
+  opacity: 0;
+  transform: translateX(-50px);
+}

@@ -1,0 +1,50 @@
+/* Note: this file is only updated on build time, so if you add or modify a font you will need to rebuild dev */
+@font-face {
+  font-family: GothamCondensed-Medium;
+  src: url("../../local-fonts/Gotham-Condensed-Medium.eot");
+  src:
+  url("../../local-fonts/NunitoSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+  url("../../local-fonts/NunitoSans-SemiBold.woff") format("woff"),
+  url("../../local-fonts/NunitoSans-SemiBold.otf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url("../../local-fonts/Gotham-Medium.eot");
+  src:
+  url("../../local-fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"),
+  url("../../local-fonts/Gotham-Medium.woff") format("woff"),
+  url("../../local-fonts/Gotham-Medium.otf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham-Bold;
+  src: url("../../local-fonts/GOTHAMBOLD");
+  src:
+  url("../../local-fonts/GOTHAMBOLD?#iefix") format("embedded-opentype"),
+  url("../../local-fonts/GOTHAMBOLD.woff") format("woff"),
+  url("../../local-fonts/GOTHAMBOLD.otf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ITCAvantGardeStd-Bk;
+  src: url("../../local-fonts/ITCAvantGardeStd-Bk.eot");
+  src:
+  url("../../local-fonts/ITCAvantGardeStd-Bk.eot?#iefix") format("embedded-opentype"),
+  url("../../local-fonts/ITCAvantGardeStd-Bk.woff") format("woff"),
+  url("../../local-fonts/ITCAvantGardeStd-Bk.otf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ITCAvantGardeStd-Bold;
+  src: url("../../local-fonts/ITCAvantGardeStd-Bold.eot");
+  src:
+  url("../../local-fonts/ITCAvantGardeStd-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../../local-fonts/ITCAvantGardeStd-Bold.woff") format("woff"),
+  url("../../local-fonts/ITCAvantGardeStd-Bold.otf") format("truetype");
+  font-display: swap;
+}

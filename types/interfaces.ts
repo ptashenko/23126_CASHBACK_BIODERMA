@@ -1,0 +1,72 @@
+import type { channel_play, contest_phone_play, playStatus } from '~/types/types'
+
+// TODO: Agrees with Backend to organize these kind of objects
+export interface IPlay {
+  amount?: string
+  shipping_first_name_manage_play?: string
+  shipping_last_name_manage_play?: string
+  address_player?: string
+  identification_code?: string
+  status?: playStatus
+  motivation?: string
+  lose?: boolean
+  status_fe?: { msg: string, class: string }
+  'id_play': number
+  'player_token_play': string
+  'practice_code_play': string
+  'datetime_play': string
+  'contest_id_play': number
+  'channel_play': channel_play
+  'username_play': string
+  'contest_phone_play': string
+  'result_play': number
+  'play_specification_play': string
+  'contest_type_play': contest_phone_play
+  'prize_id_play': null
+  'original_msg_play': string
+  'msg_in_play': string,
+  'first_name_play': string
+  'last_name_play': string
+  'birth_date_play': null
+  'fiscal_code_play': null
+  'gender_play': null
+  'receipt_date_play': string
+  'receipt_time_play': string
+  'receipt_number_play': string
+  'receipt_amount_play': string
+  'front_picture_play': string
+  'rear_picture_play': null
+  'survey_play': null
+  'created_at_play': string
+  product_registered?: []
+  'ship_data_insert_play': number
+  'shipping_address_manage_play'?: string
+  'shipping_civic_number_manage_play'?: string
+  'shipping_city_manage_play'?: string
+  'shipping_province_manage_play'?: string
+  'shipping_zip_manage_play'?: string
+  'shipping_phone_manage_play'?: string
+  'shipping_notes_manage_play'?: string
+  'support_id_play': string
+  'front_identity_doc_url_player_jwt': null
+  'rear_identity_doc_url_player_jwt': null
+  'url1_manage_play_jwt': null
+  'url1_play_jwt': null
+  'url2_manage_play_jwt': null
+  'url2_play_jwt': null
+  'url3_manage_play_jwt': null
+  'url3_play_jwt': null
+  'url4_manage_play_jwt': null
+  'url4_play_jwt': null
+  'url5_manage_play_jwt': null
+  'url5_play_jwt': null
+  'url6_manage_play_jwt': null
+  'url6_play_jwt': null
+  'url1_play': null
+  'url2_play': null
+  'url3_play': null
+  'url4_play': null
+  'url5_play': null
+  'url6_play': null
+  validation_manage_play: number
+}

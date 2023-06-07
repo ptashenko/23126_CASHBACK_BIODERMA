@@ -1,0 +1,9 @@
+@layer utilities {
+
+  .icon-empty { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48; }
+  .icon-filled { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48; }
+  .icon-slim { font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 48; }
+  .icon-strong { font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48; }
+  .normal { font-style: normal; }
+
+}

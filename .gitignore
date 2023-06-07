@@ -1,0 +1,22 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+
+# IDE / Editor
+.idea
+
+# macOS
+.DS_Store
+
+# dotenv environment variables file
+gitHub.env
+
+# config
+#/config-application/output/*
+/config/dragonConfig.ts
+.vscode/settings.json

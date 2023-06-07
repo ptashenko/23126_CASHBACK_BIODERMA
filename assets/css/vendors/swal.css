@@ -1,0 +1,53 @@
+/* NOTE: We need to use @apply TW classes here because applying the classes directly to the Swal mixin won't trigger TW build properly */
+body.swal2-shown {
+  @apply pr-0 !important;
+}
+
+.swal2-actions {
+  @apply gap-2;
+}
+
+.swal2-confirm {
+  @apply bg-transparent py-2.5 px-8 rounded text-primary border-black border;
+  @apply focus:shadow-input-focus focus:outline-none;
+}
+
+.swal2-cancel {
+  @apply bg-error py-2.5 px-8 rounded text-white border-black border;
+  @apply focus:shadow-input-focus focus:outline-none;
+}
+
+.swal2-icon-content {
+  transition: transform 300ms ease-in-out;
+}
+
+.swal2-icon-content:hover {
+  transform: scale(1.2);
+}
+
+.swal2-icon.swal2-success {
+  border: 0;
+}
+
+.swal2-close {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.swal2-close img {
+  transform: scale(0.7);
+}
+
+.swal2-title {
+  @apply text-primary;
+  @apply font-sans;
+  @apply md:text-[1.5vw] text-4vw;
+}
+
+.swal2-icon{
+  @apply w-6em;
+}
+
+.swal2-html-container {
+  @apply italic text-sm text-primary;
+}

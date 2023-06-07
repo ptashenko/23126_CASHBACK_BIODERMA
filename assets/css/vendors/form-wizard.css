@@ -1,0 +1,6 @@
+/* NOTE: We need to import the vendor CSS here before the override rules to avoid the specificity */
+/* @import "vue-form-wizard/dist/vue-form-wizard.min.css"; */
+
+.vue-form-wizard .wizard-title { @apply text-primary; }
+
+.vue-form-wizard a { text-decoration: inherit; }
